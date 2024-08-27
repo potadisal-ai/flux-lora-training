@@ -65,7 +65,7 @@ fi
 
 # Download run.py if it doesn't exist
 if [ ! -f "/workspace/ai-toolkit/train.py" ]; then
-    curl -o /workspace/ai-toolkit/train.py link_to_train.py
+    curl -o /workspace/ai-toolkit/train.py https://raw.githubusercontent.com/potadisal-ai/flux-lora-training/master/train.py
     echo "Downloaded train.py"
 else
     echo "train.py already exists, skipping download..."
